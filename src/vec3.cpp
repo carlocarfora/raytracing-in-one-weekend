@@ -2,7 +2,8 @@
 // Created by carlo on 11/11/18.
 //
 
-#include "vec3.hpp"
+#include "../include/vec3.hpp"
+#include <iostream>
 
 namespace cc {
 
@@ -30,31 +31,31 @@ namespace cc {
         return e[2];
     }
 
-    vec3 &vec3::operator+=(const vec3 &v2) {
-        return <#initializer#>;
-    }
+//    vec3 &vec3::operator+=(const vec3 &v2) {
+//        return <#initializer#>;
+//    }
+//
+//    vec3 &vec3::operator-=(const vec3 &v2) {
+//        return <#initializer#>;
+//    }
+//
+//    vec3 &vec3::operator*=(const vec3 &v2) {
+//        return <#initializer#>;
+//    }
+//
+//    vec3 &vec3::operator/=(const vec3 &v2) {
+//        return <#initializer#>;
+//    }
+//
+//    vec3 &vec3::operator*=(const float t) {
+//        return <#initializer#>;
+//    }
+//
+//    vec3 &vec3::operator/=(const float t) {
+//        return <#initializer#>;
+//    }
 
-    vec3 &vec3::operator-=(const vec3 &v2) {
-        return <#initializer#>;
-    }
-
-    vec3 &vec3::operator*=(const vec3 &v2) {
-        return <#initializer#>;
-    }
-
-    vec3 &vec3::operator/=(const vec3 &v2) {
-        return <#initializer#>;
-    }
-
-    vec3 &vec3::operator*=(const float t) {
-        return <#initializer#>;
-    }
-
-    vec3 &vec3::operator/=(const float t) {
-        return <#initializer#>;
-    }
-
-    std::istream& operator>>(std::istream &is, vec3 &t) {
+    std::istream& operator>>(std::istream& is, vec3& t) {
         is >> t.e[0] >> t.e[1] >> t.e[2];
         return is;
     }

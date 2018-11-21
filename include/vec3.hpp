@@ -11,13 +11,8 @@
 namespace cc{
 
     struct vec3 {
-        // member variables
-        std::array<float, 3> e {};
-
         // default constructor
-        vec3() {
-            e = {0,0,0};
-        }
+        vec3() = default;
 
         // parameter constructor
         vec3(float e0, float e1, float e2) {
@@ -65,11 +60,16 @@ namespace cc{
         float squared_length() const {
             return (e[0]*e[0] + e[1]*e[1] + e[2]*e[2]);
         }
+
+        // default member variables
+        std::array<float, 3> e {};
+
     };
 
-    std::istream& operator>>(std::istream& is, vec3& t);
-    std::ostream& operator<<(std::ostream& os, vec3& t);
+    std::istream& operator>>(std::istream& is, cc::vec3& t);
+    std::ostream& operator<<(std::ostream& os, cc::vec3& t);
 
 }
+
 
 #endif //RAYTRACING_IN_ONE_WEEKEND_VEC3_HPP

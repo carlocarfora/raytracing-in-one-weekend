@@ -1,6 +1,6 @@
 #include <iostream>
 #include <fstream>
-#include "vec3.hpp"
+#include "../include/vec3.hpp"
 
 int main() {
     std::ofstream ppm;
