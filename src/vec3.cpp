@@ -3,7 +3,7 @@
 //
 
 #include <iostream>
-#include <vec3.hpp>
+#include "../include/vec3.hpp"
 
 
 namespace cc {
