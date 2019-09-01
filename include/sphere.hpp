@@ -14,13 +14,14 @@ namespace cc {
             sphere() = default;
 
             // initialisation list
-            sphere(cc::vec3 cen, float r) : center(cen), radius(r) {};
+            sphere(vec3 cen, float r, material *m) : center(cen), radius(r), mat_ptr(m) {};
 
-            virtual bool hit(const cc::ray& r, float t_min, float t_max, cc::hit_record& rec) const;
+            virtual bool hit(const ray& r, float t_min, float t_max, hit_record& rec) const;
 
             // default member variables
-            cc::vec3 center;
+            vec3 center;
             float radius;
+            material *mat_ptr;
     };
 
 }
